@@ -1,0 +1,15 @@
+{
+  "name": "MySqlConnectorConnector_0",
+  "config": {
+    "connector.class": "io.debezium.connector.mysql.MySqlConnector",
+    "tasks.max": "1",
+    "database.hostname": "localhost",
+    "database.port": "3306",
+    "database.user": "root",
+    "database.password": "NaVinder-@57",
+    "database.server.name": "mysql01",
+    "database.ssl.mode": "preferred",
+    "database.history.kafka.bootstrap.servers": "localhost:9092",
+    "database.history.kafka.topic": "mysql01.spotify.spotify_test-0"
+  }
+}
