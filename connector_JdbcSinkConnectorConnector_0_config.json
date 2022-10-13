@@ -1,0 +1,15 @@
+{
+  "name": "JdbcSinkConnectorConnector_0",
+  "config": {
+    "connector.class": "io.confluent.connect.jdbc.JdbcSinkConnector",
+    "tasks.max": "1",
+    "transforms": "unwrap",
+    "topics": "mysql01.spotify.spotify2",
+    "transforms.unwrap.type": "io.debezium.transforms.ExtractNewRecordState",
+    "connection.url": "jdbc:mysql://localhost:3306/spotify",
+    "connection.user": "root",
+    "connection.password": "NaVinder-@57",
+    "table.name.format": "spotify.spotify3",
+    "auto.create": "true"
+  }
+}
